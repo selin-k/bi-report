@@ -1,0 +1,20 @@
+# filename: config/config.yaml
+# Configuration parameters for data adaptors
+
+DataIngestion:
+  ProjectName: "solar_project"
+  DataSource: "API"  # Options: API, Database, FileSystem
+  SourcePath: "/project_name/data/"
+  SourceName: "solar_sensors.csv"
+  DataType: "CSV"  # Options: CSV, JSON, XML, etc.
+  UserName: "user"
+  Password: "password"
+
+DataCuration:
+  PlaceholderValue: "N/A"  # Placeholder for null values
+
+DataTransformation:
+  # No specific configuration required for transformation
+
+DataVisualization:
+  # No specific configuration required for visualization

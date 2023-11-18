@@ -1,0 +1,32 @@
+# filename: config/config.yaml
+project_name: solar_analytics
+data_paths:
+  raw: /project_name/data/solar_sensors.csv
+  curated: /project_name/data/curated/
+  conformed: /project_name/data/conformed/
+schema:
+  raw_data_schema: # Define the schema for raw data
+    - column_name: SensorID
+      data_type: string
+    - column_name: Date
+      data_type: datetime
+    - column_name: TotalOutput
+      data_type: float
+    - column_name: LightIntensity
+      data_type: float
+    - column_name: Temperature
+      data_type: float
+  curated_data_schema: # Define the schema for curated data
+    - column_name: SensorID
+      data_type: string
+    - column_name: Date
+      data_type: datetime
+    - column_name: TotalOutput_kWh
+      data_type: float
+    - column_name: LightIntensity_kiloLux
+      data_type: float
+    - column_name: Temperature_degC
+      data_type: float
+authentication:
+  azure_storage_account_name: <storage_account_name>
+  azure_storage_account_key: <storage_account_key>

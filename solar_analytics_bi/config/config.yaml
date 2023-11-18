@@ -1,0 +1,12 @@
+# filename: config/config.yaml
+azure_storage:
+  account_name: 'your_account_name'
+  account_key: 'your_account_key'
+datalake:
+  raw_container_name: 'raw'
+  curated_container_name: 'curated'
+  conformed_container_name: 'conformed'
+data_paths:
+  solar_sensors_csv: '/project_name/data/solar_sensors.csv'
+  curated_solar_data_parquet: 'curated_solar_data.parquet'
+  transformed_solar_data_parquet: 'transformed_solar_data.parquet'

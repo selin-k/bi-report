@@ -1,0 +1,16 @@
+# filename: config/config.yaml
+azure_storage:
+  connection_string: "DefaultEndpointsProtocol=https;AccountName=your_account_name;AccountKey=your_account_key;EndpointSuffix=core.windows.net"
+  data_lake_store_name: "solarpaneldatalake"
+
+data_ingestion:
+  csv_file_path: "/project_name/data/solar_sensors.csv"
+
+data_curation:
+  # Add any specific settings for data curation if needed
+
+data_transformation:
+  # Add any specific settings for data transformation if needed
+
+data_visualization:
+  # Add any specific settings for data visualization if needed

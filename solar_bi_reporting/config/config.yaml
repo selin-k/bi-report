@@ -1,0 +1,8 @@
+# filename: config/config.yaml
+azure_data_lake_store:
+  raw_directory: /project_name/data/raw
+  curated_directory: /project_name/data/curated
+  conformed_directory: /project_name/data/conformed
+
+data_sources:
+  solar_sensors_csv: /project_name/data/solar_sensors.csv
