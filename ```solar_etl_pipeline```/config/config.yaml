@@ -1,0 +1,12 @@
+# filename: config/config.yaml
+ProjectName: "solar_etl_pipeline"
+DataSources:
+  LocalFolder:
+    SourcePath: "/project_name/data/"
+    SourceName: "solar_sensors.csv"
+    DataType: "CSV"
+AzureDataLake:
+  UserName: "your_username"
+  Password: "your_password"
+  StorageAccountName: "your_storage_account_name"
+  ContainerName: "your_container_name"
